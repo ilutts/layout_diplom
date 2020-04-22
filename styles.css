@@ -1,0 +1,21 @@
+body, html { 
+    margin: 0;
+    height: 100%;
+    font-family: Arial;
+}
+
+.center {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+
+.title {
+	margin: 5px;
+}
+
+.subtitle {
+	margin: 5px;
+}
