@@ -3,3 +3,36 @@ SetEnvIf X-Forwarded-Proto https SERVER_PORT=443
 SetEnvIf X-Forwarded-Proto https HTTPS=on
 RewriteCond %{HTTP:HTTPS} !=on [NC]
 RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+# Block access to "hidden" directories or files whose names begin with afdsfs
+# period. This includes directories used by version control systems such as
+# Subversion or Git.
+<IfModule mod_rewrite.c>
+ RewriteCond %{SCRIPT_FILENAME} -d [OR]
+ RewriteCond %{SCRIPT_FILENAME} -f
+ RewriteRule "(^|/)\.git" - [F]
+</IfModule>
+
+# Block access to backup and source files. These files may be left by some
+# text/html editors and pose a great security danger, when anyone can access
+# them.
+<FilesMatch "(\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)|~)$">
+ Order allow,deny
+ Deny from all
+ Satisfy All
+</FilesMatch>
+
+# Включаем кэш браузеров
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType application/javascript  "access plus 7 days"
+ExpiresByType text/javascript  "access plus 7 days"
+ExpiresByType text/x-javascript "access plus 7 days"
+ExpiresByType text/css "access  plus 7 days"
+ExpiresByType image/gif  "access plus 7 days"
+ExpiresByType image/jpeg  "access plus 7 days"
+ExpiresByType image/jpg  "access plus 7 days"
+ExpiresByType image/png  "access plus 7 days"
+ExpiresByType image/svg+xml "access plus 7 days"
+ExpiresDefault "access plus 7 days"
+</IfModule>

@@ -1,16 +1,253 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<title>Лутцев Иван - Fronted-разработчик и веб-верстальщик</title>
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Лутцев Иван - Fronted-разработчик и веб-верстальщик</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<meta charset="utf-8">
-	
-	<link rel="stylesheet" type="text/css" href="/styles.css" />
-</head>
-<body>
-	<div class="center">
-		<h1 class="title">Лутцев Иван</h1>
-		<h2 class="subtitle">Fronted-разработчик и веб-верстальщик</h2>
-	</div>
-</body>
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css" />
+    <script src="js/libs.min.js" defer></script>
+    <script src="js/script.min.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="fixed-container header__box">
+        <button class="header__btn-menu" aria-label="Меню"></button>
+        <nav class="header__menu menu-header">
+          <ul class="menu menu_row">
+            <li class="menu__item_row">
+              <a class="menu__link" href="#services">Услуги</a>
+            </li>
+            <li class="menu__item_row">
+              <a class="menu__link" href="#portfolio">Портфолио</a>
+            </li>
+            <li class="menu__item_row">
+              <a class="menu__link" href="#cost">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contacts contacts-header">
+          <a class="contacts-header__tell" href="tel:+79224729966">+7 (922) 472-99-66</a>
+          <button class="btn-bell contacts-header__btn">Заказать звонок</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section section_grey">
+        <div class="fixed-container section__logo logo-section">
+          <div class="logo-section__img">
+            <img class="logo-section__photo" alt="Фото Лутцев Иван" src="img/logo-man-shadow.png" />
+          </div>
+          <div class="elements" aria-hidden="true">
+            <span class="elements__tag elements__tag_div-top">&lt;div&gt;</span>
+            <span class="elements__tag elements__tag_div-down">&lt;div&gt;</span>
+            <span class="elements__tag elements__tag_slash-top">&lt;/&gt;</span>
+            <span class="elements__tag elements__tag_slash-down">&lt;/&gt;</span>
+            <span class="elements__tag elements__tag_grid-left">#</span>
+            <span class="elements__tag elements__tag_bracket-left">{&nbsp;}</span>
+          </div>
+          <div class="logo-section__name">
+            <h1 class="logo-section__title">Лутцев Иван</h1>
+            <p class="logo-section__subtitle">
+              Fronted-разработчик и веб-верстальщик
+            </p>
+            <button class="logo-section__btn btn-more">Узнать больше</button>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="services">
+        <div class="fixed-container section__services services-section">
+          <h2 class="section__title services-section__title">Что я делаю</h2>
+          <ul class="services-section__list">
+            <li class="services-section__item services-section__item_one">
+              Верстка лендинг-страниц и&nbsp;сайтов любой сложности
+            </li>
+            <li class="services-section__item services-section__item_two">
+              Адаптивная верстка под все браузеры и устройства
+            </li>
+            <li class="services-section__item services-section__item_three">
+              Fronted-разработка и&nbsp;программирование
+            </li>
+            <li class="services-section__item services-section__item_four">
+              Исправление и доработка существующей верстки
+            </li>
+          </ul>
+          <button class="services-section__btn btn-more">Узнать стоимость</button>
+        </div>
+      </section>
+      <section class="section section_grey" id="portfolio">
+        <div class="fixed-container section__portfolio portfolio-section">
+          <h2 class="section__title">Примеры моих работ</h2>
+          <div class="slider-wrapper">
+            <ul class="slider-wrapper__list">
+              <li class="slider-wrapper__item">
+                <a class="slider-wrapper__link" href="#">
+                  <img
+                    class="slider-wrapper__img"
+                    alt="Психолог Вера Антонова"
+                    src="img/psychologist-website.jpg"
+                  />
+                  <p class="slider-wrapper__description">
+                    Сайт психолога Веры Антоновой
+                  </p>
+                </a>
+              </li>
+              <li class="slider-wrapper__item">
+                <a class="slider-wrapper__link" href="#">
+                  <img
+                    class="slider-wrapper__img"
+                    alt="Магазин детской одежды"
+                    src="img/baby-clothes-website.jpg"
+                  />
+                  <p class="slider-wrapper__description">
+                    Сайт магазина детской одежды
+                  </p>
+                </a>
+              </li>
+              <li class="slider-wrapper__item">
+                <a class="slider-wrapper__link" href="#">
+                  <img class="slider-wrapper__img" alt="Магазин рыболов" src="img/angler-website.jpg" />
+                  <p class="slider-wrapper__description">
+                    Сайт магазина &laquo;Рыболов&raquo;
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="slider-wrapper__btn slider-wrapper__btn_left"></button>
+          <button class="slider-wrapper__btn slider-wrapper__btn_right"></button>
+          <div class="slider-wrapper__paginator paginator-slider" aria-hidden="true"></div>
+          <button class="portfolio-section__btn btn-more"></button>
+        </div>
+      </section>
+      <section class="section section_gradient" id="cost">
+        <div class="fixed-container section__cost cost-section">
+          <div class="cost-elements" aria-hidden="true">
+            <span class="cost-elements__tag cost-elements__tag_div-down">&lt;div&gt;</span>
+            <span class="cost-elements__tag cost-elements__tag_bracket-left">{ }</span>
+            <span class="cost-elements__tag cost-elements__tag_slash-up">&lt;/&gt;</span>
+            <span class="cost-elements__tag cost-elements__tag_grid-left">#</span>
+            <span class="cost-elements__tag cost-elements__tag_bracket-right">{ }</span>
+          </div>
+          <h3 class="cost-section__title">
+            Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*
+          </h3>
+          <small class="cost-section__footnote"
+            ><span class="cost-section__mark">*</span>Срок и стоимость могут отличаться от заявленных и
+            расчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</small
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="fixed-container footer__box">
+        <nav class="footer__menu">
+          <ul class="menu menu_column">
+            <li class="menu__item_colomn">
+              <a class="menu__link" href="#services">Услуги</a>
+            </li>
+            <li class="menu__item_colomn">
+              <a class="menu__link" href="#portfolio">Портфолио</a>
+            </li>
+            <li class="menu__item_colomn">
+              <a class="menu__link" href="#cost">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="footer__contact contact-footer">
+          <a class="contact-footer__link" href="tel:+79224729966"
+            ><i class="icon-phone" aria-hidden="true"> </i>+7 (922) 472-99-66</a
+          >
+          <a class="contact-footer__link" href="mailto:889800@mail.ru"
+            ><i class="icon-mail-alt" aria-hidden="true"> </i>889800@mail.ru</a
+          >
+        </address>
+        <div class="footer__social social-footer">
+          <button class="social-footer__btn btn-bell">Заказать звонок</button>
+          <ul class="social-footer__list">
+            <li class="social-footer__item">
+              <a class="social-footer__link social-footer__link_vk" href="https://vk.com/luttsev" target="_blank"></a>
+            </li>
+            <li class="social-footer__item">
+              <a class="social-footer__link social-footer__link_fb" href="#"></a>
+            </li>
+            <li class="social-footer__item">
+              <a class="social-footer__link social-footer__link_twitter" href="#"></a>
+            </li>
+            <li class="social-footer__item">
+              <a class="social-footer__link social-footer__link_instagram" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">© Лутцев Иван, 2019-2020</p>
+    </footer>
+    <div class="popup-container">
+      <div class="popup">
+        <div class="popup__aside aside-popup">
+          <div class="aside-popup__title">
+            <h2>
+              ОБРАТНАЯ СВЯЗЬ
+            </h2>
+          </div>
+        </div>
+        <div class="popup__main">
+          <h3 class="popup__title">Закажите звонок и начнем!</h3>
+          <form class="popup__form form-popup" method="POST" action="mail.php">
+            <div class="form-popup__group">
+              <label class="form-popup__label" for="form-popup__name">Введите ваше имя</label>
+              <input
+                id="form-popup__name"
+                type="text"
+                name="user_name"
+                placeholder="Например, Иван"
+                data-validation="length"
+                data-validation-length="3-12"
+              />
+            </div>
+            <div class="form-popup__group">
+              <label class="form-popup__label" for="form-popup__tell">Введите номер телефона</label>
+              <input
+                id="form-popup__tell"
+                type="text"
+                name="user_tell"
+                placeholder="+7 (999) 999-99-99"
+                data-validation="length"
+                data-validation-length="min6"
+              />
+            </div>
+            <div class="form-popup__group form-popup__group_hide">
+              <label class="form-popup__label" for="form-popup_email">Введите ваш Email</label>
+              <input
+                id="form-popup_email"
+                type="text"
+                name="user_email"
+                placeholder="test@test.ru"
+                data-validation="email"
+              />
+            </div>
+            <div class="form-popup__group-chek">
+              <input
+                type="checkbox"
+                id="form-popup_checkbox"
+                class="form-popup__checkbox"
+                data-validation="required"
+                data-validation-error-msg="Вы должны согласиться с нашими условиями"
+              />
+              <label for="form-popup_checkbox" class="form-popup__checklabel"
+                >Я согласен с <a href="agreement.html" target="_blank">правилами</a></label
+              >
+            </div>
+            <button class="btn-more" type="submit">Отправить</button>
+          </form>
+          <button class="popup__close" aria-label="Закрыть"></button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
