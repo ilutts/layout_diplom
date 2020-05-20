@@ -150,6 +150,7 @@ $(document).ready(function () {
     groupCheckedEnd: " элемент(ов)",
     min: "минимум",
     max: "максимум",
+<<<<<<< HEAD
     badreCaptcha: "Пожалуйста, подтвердите, что вы не бот",
   };
   // Проверка (валидация) заполнения формы
@@ -336,5 +337,13 @@ $(document).ready(function () {
         },
       });
     },
+=======
+  };
+  //Проверка заполнения формы
+  $.validate({
+    language: myLanguage,
+    form: ".popup__form",
+    scrollToTopOnError: false, // Set this property to true on longer forms
+>>>>>>> bbcdafb2b6690e594a8135dab46de64f30d1962f
   });
 });

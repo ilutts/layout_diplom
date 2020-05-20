@@ -80,7 +80,10 @@ class PHPMailerOAuth extends PHPMailer
      * @uses SMTP
      * @access public
      * @return bool
+<<<<<<< HEAD
      * @throws phpmailerException
+=======
+>>>>>>> bbcdafb2b6690e594a8135dab46de64f30d1962f
      */
     public function smtpConnect($options = array())
     {
