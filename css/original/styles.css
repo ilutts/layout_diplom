@@ -1804,12 +1804,9 @@ button:focus {
   .form-popup__group-chek {
     width: 280px;
   }
-<<<<<<< HEAD
 
   .form-popup__group_rezise {
     width: 280px;
     transform: scale(0.92);
   }
-=======
->>>>>>> bbcdafb2b6690e594a8135dab46de64f30d1962f
 }
